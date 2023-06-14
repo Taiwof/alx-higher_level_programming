@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
-if __name__ == '__main__':
-    import sys
-    sum = 0
-    num = sys.argv[1:]
-    num_count = len(num)
+if __name__ == "__main__":
+    """Print the sum of 1 and 2."""
+    from add_0 import add
 
-    for x in range(num_count):
-        sum = sum + int(num[x])
-    print(sum)
+    a = 1
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))
